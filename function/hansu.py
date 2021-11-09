@@ -5,7 +5,6 @@ def hansu(num):
             count +=1
         elif (a//100 + a%10)/2 == (a//10)%10:
             count +=1
-
     return count
 
 print(hansu(input()))
