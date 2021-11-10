@@ -54,7 +54,7 @@
       <recent name="C:\Users\user\Desktop\대학교\3학년\코테\스파르타" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sugar_delivery">
+  <component name="RunManager" selected="Python.big_num">
     <configuration name="ACM_Hotel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="코테" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="find_fountain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="big_num" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="코테" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,12 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/수학문제" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/math_problem" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/수학문제/find_fountain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/math_problem/big_num.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.big_num" />
         <item itemvalue="Python.sugar_delivery" />
         <item itemvalue="Python.be_apart_queen" />
         <item itemvalue="Python.ACM_Hotel" />
         <item itemvalue="Python.snail_tree" />
-        <item itemvalue="Python.find_fountain" />
       </list>
     </recent_temporary>
   </component>
