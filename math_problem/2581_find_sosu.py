@@ -1,5 +1,4 @@
-m = int(input())
-n = int(input())
+m,n = map(int,input().split())
 lst=[]
 
 for i in range(m,n+1):
