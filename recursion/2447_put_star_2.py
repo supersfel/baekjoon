@@ -12,6 +12,7 @@ def append_star(len):
     for s in Stars:
         lst.append(s *3)
 
+    print(lst)
 
     return lst
 

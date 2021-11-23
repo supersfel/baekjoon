@@ -14,6 +14,7 @@ def f(lst,N):
         else :
             new_lst[i] = lst[i % l] + lst[i % l] + lst[i % l]
 
+    print(new_lst)
     return f(new_lst,N-1)
 
 first_lst =[['*','*','*'],['*',' ','*'],['*','*','*']]
