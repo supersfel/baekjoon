@@ -1,10 +1,7 @@
 n = int(input())
-count = 0
-i=0
-
+count,i = 0,655
 while count < n:
     i += 1
-    if str(i).count('6') >= 3:
+    if '666' in str(i):
         count +=1
-
 print(i)
