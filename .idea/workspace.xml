@@ -5,126 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10f4a7a2-c119-4888-8047-9ddc02752b6e" name="Default Changelist" comment="baekjoon 10757">
-      <change afterPath="$PROJECT_DIR$/11~20단계/sort/2751_sort_number2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11~20단계/sort/10989_sort_number3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/average.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/count_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/max_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/min_max.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/ox_quiz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/remainder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrangement/test_average.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/1018_redraw_chessboard.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/1436_movie_directer_shoom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/2231_decomposition_sum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/2798_black_jack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/7568_big_person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/7568_big_person_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/AsumBsub3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/AsumBsub7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/AsumBsub8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/Ntnirp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/Sum1toN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/fastAsumB.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/gugudan.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/printN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/small_than_x.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/star.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/for/star_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/hansu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/rotto.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/self_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/sum_intN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if/clock.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if/compare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if/leap_year.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if/quadrant_pick.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/if/testscore.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/colculater.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/div_ab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/divide.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/dog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/mul_ab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/multi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/sub_ab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/sum_ab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/we_love_krill.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/1002_turret.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/1002_turret_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/10250_ACM_Hotel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/10757_big_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/1085_escape_squre.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/11653_Prime_Factorization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/1929_findsosu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/2252_bee_house.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/2581_find_sosu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/2775_be_apart_queen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/2869_snail_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/3009_forth_dot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/3053_taxi_math.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/4153_right_triangle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/4948_Betrand_Postulate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/9020_goldbach.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/9020_goldbach_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/9020_goldbach_3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/break_even_point.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/find_fountain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/fly_me_to_the_Alpha_Centauri.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/sosu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_problem/sugar_delivery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/10870_fibonacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/10872_factorial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/11729_tower_of_hanoi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/2447_put_star.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/2447_put_star_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/2750_sort_number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/.idea/알고리즘.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/decimal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/max_occurred_alphabet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/new_string.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/plus_or_mul.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/sosu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/1week/str_flip_over.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/06_is_existing_target_number_binary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/07_is_existing_target_number_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/08_count_down.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/09_factorial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/10_palindrome.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/11_find_k.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/12_delivery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/linked_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/linked_list_3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/linked_list_delete.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/sum_linked_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sparta/2week/sum_or_sub.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/.idea/문자열.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/ASCII_Code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/croatia_alphabet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/dial_tel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/find_alpha.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/gruop_word_checkker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/num_of_words.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/repeat_string.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/sangsu_math.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/sum_str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/word_study.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/while/aSumb sub5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/while/asumbsub4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/while/sum_cycle.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +55,7 @@
       <recent name="C:\Users\user\Desktop\대학교\3학년\코테\스파르타" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2751_sort_number2">
+  <component name="RunManager" selected="Python.10989_sort_number3">
     <configuration name="1018_redraw_chessboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="코테" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,6 +69,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bps/1018_redraw_chessboard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10989_sort_number3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="코테" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\정민규\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/11~20단계/sort" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11~20단계/sort/10989_sort_number3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,27 +140,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="7568_big_person" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="코테" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bps" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bps/7568_big_person.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="7568_big_person_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="코테" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.10989_sort_number3" />
         <item itemvalue="Python.2751_sort_number2" />
         <item itemvalue="Python.1436_movie_directer_shoom" />
         <item itemvalue="Python.1018_redraw_chessboard" />
         <item itemvalue="Python.7568_big_person_2" />
-        <item itemvalue="Python.7568_big_person" />
       </list>
     </recent_temporary>
   </component>
