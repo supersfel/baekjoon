@@ -18,37 +18,57 @@
 #
 # print(w(-1,-1,-1))
 
-lst = [[[1]*3]*3]*3
+
+
+
+
+
+# lst = [[[0 for k in range(3)] for j in range(3)] for i in range(3)]
+# print(lst)
+# for i in lst:
+#     for j in i:
+#         print(j)
+#     print('------------')
+#
+#
+# lst[1][1][1] = 3
+# print('change')
+#
+# print('------------')
+# for i in lst:
+#     for j in i:
+#         print(j)
+#     print('------------')
+#
+# print('무식하게 찍어보기')
+# print('------------')
+#
+# print(lst[0][0][0],lst[0][0][1],lst[0][0][2])
+# print(lst[0][1][0],lst[0][1][1],lst[0][1][2])
+# print(lst[0][2][0],lst[0][2][1],lst[0][2][2])
+# print('')
+# print(lst[0][0][0],lst[1][0][1],lst[2][0][2])
+# print(lst[0][1][0],lst[1][1][1],lst[2][1][2])
+# print(lst[0][2][0],lst[1][2][1],lst[2][2][2])
+# print('')
+# print(lst[0][0][0],lst[1][0][1],lst[2][0][2])
+# print(lst[0][1][0],lst[1][1][1],lst[2][1][2])
+# print(lst[0][2][0],lst[1][2][1],lst[2][2][2])
+
+
+
+
+lst = [[[0 for k in range(3)] for j in range(3)] for i in range(3)]
 print(lst)
 for i in lst:
-    for j in i:
-        print(j)
+    print(id(i))
     print('------------')
 
-
-lst[1][1][1] = 3
-print('change')
-
-print('------------')
 for i in lst:
     for j in i:
-        print(j)
-    print('------------')
-
-print('무식하게 찍어보기')
-print('------------')
-
-print(lst[0][0][0],lst[0][0][1],lst[0][0][2])
-print(lst[0][1][0],lst[0][1][1],lst[0][1][2])
-print(lst[0][2][0],lst[0][2][1],lst[0][2][2])
-print('')
-print(lst[0][0][0],lst[1][0][1],lst[2][0][2])
-print(lst[0][1][0],lst[1][1][1],lst[2][1][2])
-print(lst[0][2][0],lst[1][2][1],lst[2][2][2])
-print('')
-print(lst[0][0][0],lst[1][0][1],lst[2][0][2])
-print(lst[0][1][0],lst[1][1][1],lst[2][1][2])
-print(lst[0][2][0],lst[1][2][1],lst[2][2][2])
+        for k in j:
+            print(id(k)," | ", end="")
+        print('------------')
 
 
 
