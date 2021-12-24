@@ -5,4 +5,6 @@ for i in range(3,100):
 T = int(input())
 for _ in range(T):
     print(lst[int(input())-1])
+    
+#그대로
 
