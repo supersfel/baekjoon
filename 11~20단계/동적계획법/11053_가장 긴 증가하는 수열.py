@@ -10,3 +10,4 @@ for i in range(N):
 
 
 print(max(result))
+print(result)
