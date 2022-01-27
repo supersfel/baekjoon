@@ -9,3 +9,5 @@ while(a != 0 or b !=0 ):
         print('neither')
 
     a, b = map(int, input().split())
+
+
