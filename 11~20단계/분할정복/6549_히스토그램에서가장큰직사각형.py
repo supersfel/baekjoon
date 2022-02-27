@@ -12,5 +12,6 @@ while lst!=[0,0]:
             result = max(tmp_area,result)
         stack.append([i,lst[i]])
 
+
     print(result)
     lst =list(map(int,sys.stdin.readline().split())) + [0]
