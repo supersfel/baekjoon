@@ -11,4 +11,4 @@ for i in lst:
 
 for i in find_lst:
     try : print(count[i],end= ' ')
-    except : print('0',end= ' ')
+    except : print('0',end= '  ')
