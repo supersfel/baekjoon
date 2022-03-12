@@ -13,3 +13,5 @@ for _ in range(n):
             print(0)
     else:
         heapq.heappush(heap,order)
+
+#힙모듈로 구현
