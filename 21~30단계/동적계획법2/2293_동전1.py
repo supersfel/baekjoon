@@ -8,5 +8,5 @@ for i in lst:
     for j in range(i,k+1):
         if j-i >= 0:
             dp[j] += dp[j-i]
-
+    print(dp)
 print(dp[k])
