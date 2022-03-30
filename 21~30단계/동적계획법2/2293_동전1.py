@@ -10,3 +10,4 @@ for i in lst:
             dp[j] += dp[j-i]
     print(dp)
 print(dp[k])
+#test
