@@ -1,31 +1,37 @@
 from collections import deque
-import copy
-m,n = map(int,input().split())
-tomato = [ list(map(int,input().split())) for _ in range(n) ]
-dx = [0,1,0,-1]
-dy = [1,0,-1,0]
-cnt = 0
 
-while True:
-    for i in tomato:
-        if 0 in i:
-            break
-    else:
-        print(cnt)
-        break
+m, n = map(int, input().split())
+graph = []
+queue = deque([])
+for i in range(n):
+    graph.append(list(map(int, input().split())))
 
-    old_map = copy.deepcopy(tomato)
-    for i in range(n):
-        for j in range(m):
-            if old_map[i][j] ==1:
-                for k in range(4):
-                    nx = i+dx[k]
-                    ny = j+dy[k]
-                    if 0 <= nx < n and 0 <= ny < m:
-                        if old_map[nx][ny] == 0:
-                            tomato[nx][ny] = 1
+    for j in range(m):  # 익은 토마토 큐에 저장
+        if graph[i][j] == 1:
+            queue.append([i, j])
 
-    if old_map == tomato:
-        print(-1)
-        break
-    cnt +=1
+dx = [-1, 1, 0, 0]
+dy = [0, 0, -1, 1]
+
+
+def bfs():
+    while queue:
+        x, y = queue.popleft()
+
+        for i in range(4):
+            a = x + dx[i]
+            b = y + dy[i]
+            if 0 <= a < n and 0 <= b < m and graph[a][b] == 0:
+                queue.append([a, b])
+                graph[a][b] = graph[x][y] + 1
+
+
+bfs()
+answ = 0
+for i in graph:
+    for j in i:
+        if j == 0:
+            print(-1)
+            exit(0)
+    answ = max(answ, max(i))
+print(answ - 1)
