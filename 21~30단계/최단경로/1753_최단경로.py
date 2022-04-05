@@ -4,24 +4,30 @@ input = sys.stdin.readline
 
 v,e = map(int,input().split())
 k = int(input())
-visited = [ [ 11 for _ in range(v+1) ] for __ in range(v+1) ]
+INF = int(1e9)
+visited = [ INF for _ in range(v+1)  ]
 graph = [[] for i in range(v+1)]
 
 for _ in range(e):
     u,v,w = map(int,input().split())
-    visited[u][v] = min(visited[u][v],w)
-    graph[u].append(v)
+    graph[u].append((v,w))
 
 q = deque([[k,0]])
+
 while q:
     node,cnt = q.popleft()
-    for i in graph[node]:
-        visited[k][i] = min(visited[k][i],cnt + visited[node][i])
-        q.append([i,visited[k][i]])
+
+    if cnt > visited[node]:
+        continue
+
+    for i,j in graph[node]:
+        if visited[i] > cnt + j:
+            visited[i] = cnt + j
+            q.append((i,visited[i]))
 
 print(0)
 for i in range(2,v+2):
-    print(visited[k][i] if visited[k][i]<11 else 'INF')
+    print(visited[i] if visited[i] !=INF else 'INF')
 
 
 
