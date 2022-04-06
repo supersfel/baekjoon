@@ -15,6 +15,7 @@ for _ in range(e):
 q = deque([[k,0]])
 
 while q:
+    print(q)
     node,cnt = q.popleft()
 
     if cnt > visited[node]:

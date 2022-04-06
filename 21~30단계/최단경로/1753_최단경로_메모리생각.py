@@ -18,9 +18,13 @@ for _ in range(e):
 q = []
 heapq.heappush(q,(0,k))
 distance[k] = 0
+print(graph)
 
 while q:
+    print(q)
     cnt,node = heapq.heappop(q)
+
+    print('distance',distance)
     if distance[node] < cnt:
         continue
     for i,j in graph[node]:
