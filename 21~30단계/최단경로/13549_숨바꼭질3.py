@@ -1,23 +1,41 @@
+import sys
 from collections import deque
-n,k = map(int,input().split())
 
-q = deque([n])
-dp = [ 0 for _ in range(100001) ]
+M = 100000
 
 
+def bfs():
+    q = deque()
+    q.append(N)
+    while q:
+        now = q.popleft()
+        if now == K:
+            return cnt[now]
 
-while q:
-    x = q.popleft()
+        # 1
+        # x = now
+        # while 0 < x <= M:
+        #     if cnt[x] == -1:
+        #         cnt[x] = cnt[now]
+        #         q.appendleft(x)
+        #     x *= 2
 
-    if x == k:
-        print(dp[x])
-        break
+        # 2
+        if 2 * now <= M and cnt[2 * now] == -1:
+            cnt[2 * now] = cnt[now]
+            q.appendleft(2 * now)
+        ##################################
 
-    for nx in (x-1,x+1,2*x):
-        if 0 <= nx <= 100000 and not dp[nx]:
-            if nx == 2*x:
-                dp[nx] = dp[x]
-            else:
-                dp[nx] = dp[x] + 1
-            q.append(nx)
+        for i in (now - 1, now + 1):
+            if 0 <= i <= M and cnt[i] == -1:
+                cnt[i] = cnt[now] + 1
+                q.append(i)
 
+
+N, K = map(int, sys.stdin.readline().split())
+cnt = [-1] * (M + 1)
+cnt[N] = 0
+if K <= N:
+    print(N - K)
+else:
+    print(bfs())
