@@ -27,3 +27,4 @@ for i in A:
             end = mid   #이분탐색 +1은 start에
     cnt += end   #end값을 더해야함 mid값 x
 print(len(A) + len (B) + cnt)
+#냅색
