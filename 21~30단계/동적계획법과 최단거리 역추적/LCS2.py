@@ -1,5 +1,7 @@
-a = input()
-b = input()
+import sys
+input = sys.stdin.readline
+a = input().strip()
+b = input().strip()
 
 dp = [ [0 for _ in range(len(b)+1)] for __ in range(len(a)+1)]
 result= [ ['' for _ in range(len(b)+1)]  for __ in range(len(a)+1)]
