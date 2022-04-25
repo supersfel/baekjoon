@@ -84,7 +84,10 @@ print(min_value)
 
 # 저장된 경찰위치를 통해 역으로 추적
 trace = []
+for i in dp_trace:
+    print(i)
 for i in range(W):
+    print(police1,police2)
     if police2 > police1:
         police2 = dp_trace[police1][police2]
         trace.append(2)
