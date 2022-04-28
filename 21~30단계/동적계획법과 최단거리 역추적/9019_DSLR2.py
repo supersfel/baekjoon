@@ -25,7 +25,7 @@ def bfs(a,b):
             q.append((L, result + "L"))
             dp[L] = True
 
-        # 4
+        
         R = (num // 10 + (num % 10) * 1000) % 10000
         if not dp[R]:
             q.append((R, result + "R"))
