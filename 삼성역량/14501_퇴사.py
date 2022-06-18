@@ -20,4 +20,4 @@ for i in range(1,n):
         dp[i] = max(dp[i-1],dp[i-day[i]]+cost[i])
     else:
         dp[i] = dp[i-1]
-print(dp[-1])
+    print(dp)
