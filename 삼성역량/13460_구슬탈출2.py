@@ -12,7 +12,7 @@ for _ in range(n):
     board.append(input())
 
 R_co,O_co,B_co = [],[],[]
-for i in range(n):  #R,B,O 좌표찾기
+for i in range(n):
     for j in range(m):
         if board[i][j] == 'R':
             R_co = [i,j]
@@ -29,7 +29,7 @@ while q:
     if cnt > 10:
         print(-1)
         break
-    if B == O_co: #B,R 찾기
+    if B == O_co:
         continue
     elif R == O_co:
         print(cnt)
