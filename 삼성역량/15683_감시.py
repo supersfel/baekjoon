@@ -52,6 +52,8 @@ def dfs(cctv,odr):
 
         board = [x[:] for x in old_board]
 
-
-dfs(cctvs[0],0)
-print(result)
+if len_cctv==0:
+    print(check_size())
+else:
+    dfs(cctvs[0],0)
+    print(result)
