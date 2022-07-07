@@ -1,48 +1,58 @@
 import sys
+from collections import deque
+import math
 input = sys.stdin.readline
 
 n,l,r = map(int,input().split())
 city = [ list(map(int,input().split())) for _ in range(n)]
-dx = [ 0,1 ]
-dy = [ 1,0 ]
 
-def find(a,b):
-    if parents[a][b] == [a,b]:
-        return [a,b]
-    na,nb = parents[a][b]
-    parents[a][b] = find(na,nb)
-    return parents[a][b]
 
-def union(x,y):
-    a,b = x
-    c,d = y
-    a,b = find(a,b)
-    c,d = find(c,d)
+dx = [ 0,1,0,-1 ]
+dy = [ 1,0,-1,0 ]
 
-    if a<=c:
-        parents[c][d] = [a,b]
-    else:
-        parents[a][b] = [c,d]
+def bfs(i,j):
+    q = deque()
+    q.append((i,j))
+    visited[i][j] = True
+    union = [(i,j)]
+    count = city[i][j]
 
+    while q:
+        x,y = q.popleft()
+
+        for d in range(4):
+            nx,ny = x + dx[d],y+dy[d]
+
+            if 0<=nx<n and 0<=ny<n and visited[nx][ny] == 0 and l<=abs(city[nx][ny]-city[x][y])<=r:
+                union.append((nx,ny))
+                count += city[nx][ny]
+                q.append((nx,ny))
+                visited[nx][ny] = True
+
+    if len(union) > 1:
+        value = count // len(union)
+        for x,y in union:
+            city[x][y] = value
+
+
+    return len(union)
+
+
+
+
+cnt = 0
 while True:
-    old_city = [ x[:] for x in city]
-    parents = [[[i, j] for j in range(n)] for i in range(n)]
-    sum_lst = [ x[:] for x in city]
-    print(parents)
-
+    flg = False
+    visited = [[False] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
-            for k in range(2):
-                ni,nj = i + dx[k], j + dy[k]
-
-                if ni<n and nj<n and l<=abs(city[ni][nj]-city[i][j])<=r:
-                    print('-test')
-                    union([i,j],[ni,nj])
-                    x,y = find(i,j)
-                    sum_lst[x][y] += city[ni][nj]
-
-            print(parents)
-            for q in sum_lst:
-                print(q)
-            print('--------')
-    break
+            if not visited[i][j]:
+                if bfs(i,j)>1:
+                    flg = True
+    if not flg:
+        break
+    # for q in city:
+    #     print(q)
+    # print('---------')
+    cnt +=1
+print(cnt)
