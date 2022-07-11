@@ -6,7 +6,7 @@ def find(node):
         return node
     parents[node] = find(parents[node])
     return parents[node]
-
+#dd
 def union(a,b):
     a,b = find(a),find(b)
     if a> b:
