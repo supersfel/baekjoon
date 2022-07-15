@@ -20,7 +20,7 @@ n = int(input())
 arr = [int(input()) for _ in range(n)]
 k = int(input())
 arr_length = [len(str(i)) for i in arr]
-arr = [i % k for i in arr]
+arr = [i % k for i in arr]#d#e
 
 mod_10 = [1]
 for i in range(50):
