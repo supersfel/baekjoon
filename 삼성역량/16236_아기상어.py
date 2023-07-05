@@ -5,12 +5,10 @@ input = sys.stdin.readline
 dx = [ -1 , 0 , 0 , 1 ]
 dy = [ 0 , -1 , 1 , 0 ]
 
-
 n = int(input())
 sea = [ list(map(int,input().split())) for _ in range(n)]
 size = 2
 cnt = 0
-
 for i in range(n):
     for j in range(n):
         if sea[i][j] == 9:
@@ -42,10 +40,8 @@ def bfs(x,y):
 
 result = 0
 while True:
-    # print('x,y',x,y)
     sea[x][y] = 0
     temp = bfs(x,y)
-    # print('temp',temp)
     if len(temp) ==0:
         break
     x,y,dist = temp[0]
@@ -56,13 +52,5 @@ while True:
     if size == cnt:
         size += 1
         cnt = 0
-
-
-    # print('size :',size,'cnt : ',cnt)
-    # print('dist :',dist,'result :',result)
-    # for i in sea:
-    #     print(i)
-    #
-    # print('=============')
 
 print(result)
