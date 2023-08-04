@@ -1,7 +1,7 @@
-const ary = new Array(10).fill().map((_) => [false, false, false, false]);
+document.querySelector(".test");
 
-console.log(ary);
+const btn = document.querySelector(".btn");
 
-ary[0][2] = true;
-
-console.log(ary);
+btn.addEventListener("click", (e) => {
+  e.innerHTML += "추가되었습니다.";
+});
