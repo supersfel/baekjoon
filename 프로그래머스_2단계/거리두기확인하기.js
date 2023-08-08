@@ -1,5 +1,6 @@
 function solution(places) {
   const dx = [1, 0, -1, 0];
+
   const dy = [0, 1, 0, -1];
 
   const dfs = (x, y, dist, place) => {
