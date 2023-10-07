@@ -1,3 +1,4 @@
+// 1번 풀이
 function solution(temperature, t1, t2, a, b, onboard) {
   const dp = Array.from(Array(onboard.length), (x) => Array(50).fill(Infinity));
 
