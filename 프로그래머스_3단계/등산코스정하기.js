@@ -68,34 +68,43 @@ function solution(n, paths, gates, summits) {
   for (const summit of summits) summitMap.set(summit, true);
 
   let ret = [-1, Infinity];
-
-  const queue = new Heap();
-  const dp = Array(n + 1).fill(Infinity);
   for (const gate of gates) {
-    queue.push(gate);
-    dp[gate] = 0;
-  }
+    const heap = new Heap();
+    const dp = Array(n + 1).fill(Infinity);
+    const visited = Array(n + 1).fill(false);
+    for (const gate of gates) dp[gate] = -1;
 
-  while (queue.length) {
-    const node = queue.pop();
-    const weight = dp[node];
-
-    if (summitMap.get(node) || dp[node] < weight) continue;
-
-    for (const [nextNode, newWeight] of graph[node]) {
-      const newIntensity = Math.max(weight, newWeight);
-      if (newIntensity < dp[nextNode]) {
-        dp[nextNode] = newIntensity;
-        queue.push(nextNode);
+    for (const [nextNode, weight] of graph[gate]) {
+      if (dp[nextNode] !== -1) {
+        heap.push(nextNode);
+        dp[nextNode] = weight;
+        visited[nextNode] = true;
       }
     }
-  }
+    
+    while (heap.length) {
+      const node = heap.pop();
+      const weight = dp[node];
+      for (const [nearNode, nearNodeWeight] of graph[node]) {
+        if (dp[nearNode] === -1 || dp[nearNode] <= weight) continue;
+        const nextWeight = weight > nearNodeWeight ? weight : nearNodeWeight;
+        dp[nearNode] = Math.min(dp[nearNode], nextWeight);
+        if (summitMap.get(nearNode) || visited[nearNode]) continue;
+        heap.push(nearNode);
+        visited[nearNode] = true;
+      }
+    }
 
-  let answer = [0, Infinity];
-  summits.sort((a, b) => a - b);
-  for (const summit of summits) {
-    if (dp[summit] < answer[1]) answer = [summit, dp[summit]];
-  }
+    let tmp = Infinity;
+    let tmpSummit = Infinity;
+    for (const summit of summits) {
+      if (dp[summit] < tmp) {
+        tmp = dp[summit];
+        tmpSummit = summit;
+      }
+    }
 
-  return answer;
+    if (ret[1] > tmp) ret = [tmpSummit, tmp];
+  }
+  return ret;
 }
